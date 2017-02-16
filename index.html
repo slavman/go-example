@@ -318,7 +318,10 @@
     modalContet.innerHTML = createModalHtml(node);
 
     //hack - close tooltip
-    document.getElementsByClassName('vis-tooltip')[0].style.visibility='hidden';
+    setTimeout(function() {
+      document.getElementsByClassName('vis-tooltip')[0].style.visibility='hidden';
+    }, 1000);
+    
 
     modal.style.display = "block";
   }
