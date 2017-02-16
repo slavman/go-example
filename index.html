@@ -317,6 +317,9 @@
     var modalContet = document.getElementById('modalContent');
     modalContet.innerHTML = createModalHtml(node);
 
+    //hack - close tooltip
+    document.getElementsByClassName('vis-tooltip')[0].style.visibility='hidden';
+
     modal.style.display = "block";
   }
 
